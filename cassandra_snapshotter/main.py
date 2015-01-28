@@ -162,7 +162,6 @@ def main():
                                 help='user password to connect with hosts')
 
     backup_parser.add_argument('--sshkey-filename',
-                                default='',
                                 help='ssh private key to authenticate with hosts')
 
     backup_parser.add_argument('--new-snapshot',
