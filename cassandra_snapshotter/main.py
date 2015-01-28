@@ -20,7 +20,7 @@ def run_backup(args):
         env.password = args.password
 
     if args.sshkey-filename:
-        env.key_filename = args.key_filename
+        env.key_filename = args.sshkey-filename
 
     if args.sshport:
         env.port = args.sshport
