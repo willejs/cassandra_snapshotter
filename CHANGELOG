@@ -1,3 +1,6 @@
+0.3.2
+ * Configurable SSH private key file, equivilent to 'ssh -i <key> ...'
+
 0.3.1
  * Fix bug with missing manifest file on S3 (--prefix)
 
