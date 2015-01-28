@@ -19,6 +19,9 @@ def run_backup(args):
     if args.password:
         env.password = args.password
 
+    if args.sshkey-filename:
+        env.key_filename = args.key_filename
+
     if args.sshport:
         env.port = args.sshport
 
@@ -157,6 +160,10 @@ def main():
     backup_parser.add_argument('--password',
                                 default='',
                                 help='user password to connect with hosts')
+
+    backup_parser.add_argument('--sshkey-filename',
+                                default='',
+                                help='ssh private key to authenticate with hosts')
 
     backup_parser.add_argument('--new-snapshot',
                                action='store_true',
